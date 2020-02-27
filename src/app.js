@@ -20,9 +20,10 @@ app.use('/api/folders', folderRouter)
 app.use('/api/notes', noteRouter)
 
 app.get('/', (req, res) => {
-    res.send('Hello, world!')
+    res.send('Hello')
 })
 
+/*
 app.use(function errorHandler(error, req, res, next) {
   let response
   if (NODE_ENV === 'production') {
@@ -32,7 +33,7 @@ app.use(function errorHandler(error, req, res, next) {
      response = { message: error.message, error }
   }
       res.status(500).json(response)
-})
+})*/
     
 
 module.exports = app
